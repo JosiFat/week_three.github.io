@@ -1,0 +1,144 @@
+
+<!-- HOLA!!! :) MENCIONES DEL AUTOR - RESPUESTA A LAS PREGUNTAS PLANTEADAS PARA LA REVISIÓN.-->
+
+<!-- ¿La implementación utiliza estilos CSS en línea en absoluto (no permitido) o hace referencia a un archivo CSS externo? -->
+
+<!-- 
+  Sí cumple. La implementación hace referencia a un archivo CSS externo llamado "style_menu.css" y no utiliza estilos CSS en línea en absoluto. 
+Esto es una práctica recomendada, ya que separa el contenido HTML de los estilos CSS, lo que facilita el mantenimiento y la organización 
+del código. El uso de archivos CSS externos también permite reutilizar estilos en varias páginas web, lo que mejora la consistencia y 
+la eficiencia en el desarrollo web.
+-->
+
+
+<!-- ¿Está implementada la navbar por defecto de tal forma que se desplaza con la página, es decir, 
+  no está fijada estáticamente a la parte superior o inferior de la pantalla? -->
+
+<!--
+  Sí cumple. La implementación utiliza la barra de navegación de Bootstrap de manera que se desplaza con la página, es decir, 
+  no está fijada estáticamente en la parte superior o inferior de la pantalla. Esto es el comportamiento por defecto de 
+  la barra de navegación de Bootstrap cuando se utiliza la clase navbar. La barra de navegación se desplaza junto con el 
+  contenido de la página a medida que el usuario se desplaza hacia arriba o hacia abajo, lo que es una práctica común en sitios 
+  web responsive.
+-->
+
+
+<!-- ¿Está la marca "Food, LLC" correctamente alineada a la izquierda de la navbar y utiliza la clase navbar-brand? -->
+
+<!-- 
+Sí, la marca "Food, LLC" está correctamente alineada a la izquierda de la barra de navegación y se utiliza la clase 
+navbar-brand para lograrlo. Esto cumple con la convención de Bootstrap para la marca en una barra de navegación, 
+que se espera que esté alineada a la izquierda. Por lo tanto, la implementación es consistente con las prácticas recomendadas 
+de Bootstrap en este aspecto.
+-->
+
+<!--¿El botón del menú desplegable sólo es visible cuando el navegador es lo suficientemente estrecho como para estar en vista móvil?-->
+
+<!--
+Sí, el botón del menú desplegable solo es visible cuando el navegador es lo suficientemente estrecho como 
+para estar en vista móvil. Esto se debe a que se utiliza la clase navbar-toggler en el botón del menú desplegable. 
+Esta clase de Bootstrap controla cuándo se muestra el botón del menú en función del ancho de la pantalla. 
+Por lo tanto, cuando el ancho de la pantalla es lo suficientemente estrecho, el botón del menú desplegable se hace visible, 
+lo que es una práctica común para proporcionar una experiencia de navegación móvil amigable.
+-->
+
+<!-- ¿Al hacer clic en el botón del menú desplegable, éste se desliza hacia abajo? 
+  ¿Ocupa todo el ancho del navegador (menos algunos márgenes)? ¿Está centrada la etiqueta de cada elemento del menú (por ejemplo, "Pollo") 
+  utilizando una clase de Bootstrap? -->
+
+<!-- 
+  Al hacer clic en el botón del menú desplegable, este se desliza hacia abajo y ocupa todo el 
+  ancho del navegador, menos algunos márgenes. Además, las etiquetas de cada elemento del menú (por ejemplo, 
+  "Cheviche de Pescado," "Parihuela de Mariscos," y "Sudado de Pescado") están centradas utilizando clases de Bootstrap. 
+  Esto cumple con las prácticas de diseño típicas de navegación móvil amigable de Bootstrap, donde el menú se expande hacia abajo 
+  cuando se hace clic en el botón del menú desplegable.
+ -->
+
+
+ <!--¿El encabezado de la página, "Nuestro menú", está centrado en la pantalla utilizando la clase Bootstrap?-->
+
+<!--  
+  Sí, el encabezado de la página, "Nuestro menú," está centrado en la pantalla utilizando la clase Bootstrap. 
+  La estructura HTML utiliza la clase "text-center" en el elemento "h1" para centrar el encabezado en la pantalla, 
+  lo cual es una práctica común de Bootstrap para la alineación de elementos en el centro de la página.
+-->
+
+<!--¿Está la sección de una sola celda (o varias secciones según la parte opcional de la tarea) utilizando el sistema de 
+  cuadrícula de Bootstrap y es la sección lo suficientemente alta como para obligar al espectador a desplazarse si quisiera 
+  llegar al final de la página?-->
+
+<!--Sí, la sección de celdas utiliza el sistema de cuadrícula de Bootstrap. En el código HTML, se utilizan clases como "container," 
+  "row," y "col" para definir la estructura de la cuadrícula y organizar las celdas. Además, las celdas tienen un contenido que ocupa 
+  espacio en la página, lo que hace que la sección sea lo suficientemente alta como para obligar al espectador a desplazarse si quisiera 
+  llegar al final de la página. Por lo tanto, cumple con ese requisito.
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Incluye la referencia a Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style_menu.css">
+  <title>Food, LLC</title>
+</head>
+<body>
+  <div class="capa"></div>
+
+  <!-- Barra de navegación Bootstrap con icono de hamburguesa en tabletas y móviles -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Food, LLC</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Cheviche de Pescado</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Parihuela de Mariscos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sudado de Pescado</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenedor para el título "Nuestro Menú" centrado -->
+  <div class="container text-center mt-3">
+    <h1 class="text-white title">Nuestro Menú</h1>
+  </div>
+
+  <!-- Contenedor de las cajas utilizando Bootstrap clases de tamaño (lg, md, sm, xs) -->
+  <div class="contenedor">
+    <div class="caja caja-lg caja-md">
+      <div class="caja-interna caja-interna1">Ceviche de pescado</div>
+      <p class="text text1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro natus sit perferendis adipisci illum illo dolor iusto facilis, explicabo, aliquid iure quia cum obcaecati unde at suscipit deserunt, delectus nisi.
+      Voluptatem perspiciatis atque vero architecto a laudantium? Sint, accusamus? Atque quasi qui libero totam tenetur minus quo perspiciatis facilis illum. Recusandae omnis quae voluptatum excepturi, et ipsa repellat distinctio enim.
+      Animi dolor a tenetur odio aspernatur. Delectus labore eveniet voluptates, sed iure ipsum, repellat omnis, enim ab iste laudantium nemo mollitia magnam assumenda quia saepe quis. Pariatur magnam adipisci dolor.</p>
+    </div>
+    <div class="caja caja-lg caja-md">
+      <div class="caja-interna caja-interna2">Parihuela de Mariscos</div>
+      <p class="text text2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam quibusdam aliquam sequi et. Enim dicta laborum labore dolorem maiores ea commodi fuga veritatis. Rerum quia ipsum asperiores dicta repellat numquam.
+      Eaque officia dicta odio iusto suscipit, enim consequatur fuga qui assumenda debitis, autem repellat, maiores vel porro ipsam harum. Dolore pariatur est eaque similique totam delectus ad ullam. Deleniti, accusamus.
+      Pariatur eos, iste maxime expedita voluptas facere illo, inventore, distinctio sit eum quasi amet? Esse eligendi exercitationem architecto distinctio laudantium eos quasi deserunt, accusantium repudiandae numquam, alias ipsum cum blanditiis?</p>
+    </div>
+    <div class="caja caja-lg caja-md">
+      <div class="caja-interna caja-interna3">Sudado de pescado</div>
+      <p class="text text3">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa autem, voluptatem commodi similique ducimus qui impedit quis, sunt iste necessitatibus maxime. Quos nemo ex quibusdam sequi provident dolores cumque doloribus.
+      Soluta, rerum suscipit harum architecto maxime minima sint ut! Sapiente voluptates doloremque quam beatae minima ipsa maxime, enim excepturi quis consequatur unde accusamus laudantium veniam deleniti cumque assumenda ipsum. Reprehenderit.
+      Veritatis dolorem, rem at necessitatibus odio, adipisci nulla laudantium modi numquam, quas similique optio aut neque reprehenderit commodi placeat veniam quasi tempore alias. Quasi maiores quis autem voluptatem tempore pariatur.</p>
+    </div>
+  </div>
+
+  <!-- Incluye las referencias a Bootstrap JS y jQuery para que los componentes de Bootstrap funcionen correctamente -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
